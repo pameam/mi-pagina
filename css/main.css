@@ -92,15 +92,14 @@ h2 {
   font-size: 11px;
   border: none;
   border-radius: 5px;
-  /*margin-top: 10px;*/
 }
 footer {
   padding: 3rem;
 }
-
+/*
 .col-section {
   width: 100%;
-}
+}*/
 
 .view-mobile {
   display: block;
@@ -117,14 +116,10 @@ ul li {
 }
 
 @media (min-width: 768px) {
-   .col-section {
+   /*.col-section {
     width: 50%;
     float: left;
-  }
-  section {
-    overflow: auto;
-    display: flex;
-  }
+  }*/
   .text-rock {
     display: flex;
     flex-direction: column;
@@ -142,4 +137,16 @@ ul li {
   section{
     margin: 0 40px;
   }
+}
+.container-img{
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #ffff;
+}
+.image{
+  margin :5px;
+  text-align: center;
+}
+.text{
+  width: 300px;;
 }
