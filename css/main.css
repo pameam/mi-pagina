@@ -1,0 +1,145 @@
+/* menú hamburguesa */
+.main-hamburger {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 2px;
+  width: 24px;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before, .main-hamburger::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 24px;
+  display: block;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before {
+  top: -8px;
+}
+
+.main-hamburger::after {
+  top: 8px;
+}
+/* fin de menú hamburguesa */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.bg-reverse {
+  background-color: #383e42;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+
+}
+
+nav {
+  padding: 14px;
+  overflow: hidden;
+}
+
+.nav-left {
+  font-size: 1.25rem;
+  float: left;
+  padding-left: 35px;
+}
+
+.nav-right {
+  float: right;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-header {
+  height: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/img/image-04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.button {
+  background-color: #546180;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  padding: 8px;
+  font-size: 11px;
+  border: none;
+  border-radius: 5px;
+  /*margin-top: 10px;*/
+}
+footer {
+  padding: 3rem;
+}
+
+.col-section {
+  width: 100%;
+}
+
+.view-mobile {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+/* estilos solo para desktop*/
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+   .col-section {
+    width: 50%;
+    float: left;
+  }
+  section {
+    overflow: auto;
+    display: flex;
+  }
+  .text-rock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .view-mobile {
+    display: none;
+  }
+
+  .view-desktop {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  section{
+    margin: 0 40px;
+  }
+}
