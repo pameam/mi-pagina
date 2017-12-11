@@ -92,6 +92,7 @@ h2 {
   font-size: 11px;
   border: none;
   border-radius: 5px;
+  text-align: center;
 }
 footer {
   padding: 3rem;
@@ -146,7 +147,10 @@ ul li {
 .image{
   margin :5px;
   text-align: center;
+  
 }
 .text{
-  width: 300px;;
+  width: 300px;
+  text-align: justify;
+  margin: 8px;
 }
